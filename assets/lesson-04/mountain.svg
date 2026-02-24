@@ -1,0 +1,9 @@
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Snowy mountains at sunrise">
+  <rect width="100%" height="100%" fill="#e9f2ff" />
+  <circle cx="520" cy="80" r="40" fill="#ffd166" />
+  <polygon points="80,320 220,140 360,320" fill="#6c8ea3" />
+  <polygon points="200,320 360,110 520,320" fill="#547a91" />
+  <polygon points="210,180 240,140 270,180" fill="#f7fbff" />
+  <polygon points="350,170 380,130 410,170" fill="#f7fbff" />
+  <rect x="0" y="300" width="640" height="60" fill="#cde7d8" />
+</svg>

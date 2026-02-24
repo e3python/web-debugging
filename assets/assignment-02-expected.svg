@@ -1,0 +1,18 @@
+<svg width="900" height="400" viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Expected page layout with a heading, paragraph, numbered list, and closing paragraph">
+  <rect width="100%" height="100%" fill="#f7f7fb" />
+  <rect x="60" y="40" width="780" height="320" rx="16" fill="#ffffff" stroke="#d9d9e3" stroke-width="2" />
+  <text x="100" y="120" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="34" fill="#1b1b1f" font-weight="700">Studio Checklist</text>
+  <text x="100" y="165" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="18" fill="#30303a">Before you start drawing, make sure you have the supplies below.</text>
+
+  <text x="122" y="210" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="18" fill="#30303a">•</text>
+  <text x="150" y="210" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="18" fill="#30303a">Sketchbook</text>
+
+  <text x="122" y="240" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="18" fill="#30303a">•</text>
+  <text x="150" y="240" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="18" fill="#30303a">Pencils</text>
+
+  <text x="122" y="270" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="18" fill="#30303a">•</text>
+  <text x="150" y="270" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="18" fill="#30303a">Eraser</text>
+
+  <text x="100" y="315" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="18" fill="#30303a">When you are ready, set a timer for 10 minutes and begin.</text>
+  <text x="100" y="350" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" fill="#6b6b76">Expected appearance</text>
+</svg>

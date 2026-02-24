@@ -1,0 +1,238 @@
+# Web Debugging - Copilot Support Guide for Students
+
+This file provides vocabulary, definitions, and guidance to help you understand and debug HTML and CSS code.
+
+---
+
+## Essential Vocabulary
+
+### HTML Structure
+
+- **HTML tag:** A label that tells the browser what content is inside it
+  - Example: `<p>`, `<div>`, `<h1>`, `<img>`
+- **Opening tag:** The start of an element with the tag name: `<tagname>`
+- **Closing tag:** The end of an element: `</tagname>`
+- **Element:** A complete opening tag, content, and closing tag
+  - Example: `<p>This is a paragraph</p>`
+- **Attribute:** Extra information about an element
+  - Example: In `<img src="photo.jpg" alt="My photo">`, `src` and `alt` are attributes
+- **Self-closing tag:** A tag that doesn't need a closing tag because it has no content
+  - Example: `<img>`, `<br>`, `<hr>`
+- **Nesting:** When one element is inside another
+  - Example: `<div><p>Text</p></div>` - the `<p>` is nested inside the `<div>`
+- **Indentation:** Spaces at the beginning of a line to show structure
+  - Good practice: indent nested elements to show hierarchy
+
+### CSS Properties
+
+- **Selector:** The part of CSS that chooses which HTML elements to style
+  - Example: `p { }` styles all `<p>` tags
+- **Property:** What you're changing (like color, size, spacing)
+  - Examples: `color`, `background-color`, `font-size`, `margin`, `padding`, `border`
+- **Value:** What you're changing the property to
+  - Example: In `color: red;`, `red` is the value
+- **Rule:** A complete selector and its properties
+  - Example: `p { color: red; font-size: 16px; }`
+- **Semicolon:** Ends a CSS property (`;`)
+  - Must be included after each property value
+- **Flexbox:** A way to arrange items in a row or column with spacing
+  - Properties: `display: flex;`, `flex-direction`, `justify-content`, `align-items`
+- **Stylesheet link:** The code in HTML that connects to a CSS file
+  - Example: `<link rel="stylesheet" href="style.css">`
+
+### Accessibility
+
+- **alt text (alternative text):** A description of an image for people who can't see it
+  - Goes in the `alt` attribute: `<img alt="A cat sitting on a desk">`
+  - Should be descriptive, not just "image"
+- **Semantic HTML:** Using the right HTML tags for their meaning
+  - Example: Use `<h1>` for main headings, not just any large text
+
+---
+
+## Common HTML Errors
+
+### "Missing Closing Tag"
+
+- You opened an element with `<tagname>` but forgot `</tagname>`
+- Check that every opening tag has a matching closing tag
+- Self-closing tags like `<img>` and `<br>` don't need closing tags
+
+### "Incorrect Nesting"
+
+- You closed a tag in the wrong order
+- Correct: `<div><p>Text</p></div>`
+- Wrong: `<div><p>Text</div></p>` (closed `div` before closing `p`)
+- Always close the most recently opened tag first
+
+### "Missing Attributes"
+
+- An element is missing information it needs
+- Example: `<img>` needs `src` to know what picture to show
+- Example: `<a>` needs `href` to know where to link
+
+### "Broken File Path"
+
+- The filename or path to an image doesn't match the actual file
+- Check for: spelling mistakes, wrong file extension, wrong folder
+- Example: Wrote `photo.jpg` but file is actually `photo.JPG`
+
+---
+
+## Common CSS Errors
+
+### "Stylesheet Not Linked"
+
+- The CSS file exists, but HTML doesn't know about it
+- Check that `<link rel="stylesheet" href="style.css">` is in the `<head>`
+- Make sure the filename matches exactly (including capitalization)
+
+### "Missing Semicolon"
+
+- You forgot `;` after a property value
+- This breaks the CSS rule for that element
+- Example: `color: red` should be `color: red;`
+
+### "Typo in Property Name"
+
+- You misspelled a CSS property
+- The browser doesn't recognize it and ignores it
+- Check spelling: `background-color` not `backgroundColor`, `font-size` not `fontsize`
+
+### "Selector Not Matching"
+
+- Your CSS selector doesn't match the HTML elements you want to style
+- Check class names: `.classname` in CSS must match `class="classname"` in HTML
+- Check IDs: `#idname` in CSS must match `id="idname"` in HTML
+
+---
+
+## Debugging Steps
+
+When code isn't working:
+
+1. **Look at the page in the browser**
+   - What do you see? What should you see?
+   - Is an image missing? Is text the wrong color? Is the layout wrong?
+
+2. **Open Developer Tools** (press F12 or right-click → Inspect)
+   - Check the HTML to see if tags are missing or wrong
+   - Check the CSS to see if properties are applied
+
+3. **Check for common mistakes**
+   - Are all tags opened and closed?
+   - Are tags nested correctly?
+   - Is the CSS file linked in the `<head>`?
+   - Does every CSS property end with `;`?
+   - Do class/ID names match between HTML and CSS?
+
+4. **Trace the problem**
+   - Sentence frame: "I expected **[what should happen]**, but instead **[what actually happened]**."
+   - Example: "I expected the image to show, but instead the page shows a broken image icon."
+
+5. **Make one change at a time**
+   - Fix one thing, save, and check the browser
+   - That way you know what fixed the problem
+
+---
+
+## Sentence Frames for Debugging
+
+### When Reading Error Messages or Warnings
+
+- "The browser is telling me that **[problem]** on line **[number]**."
+- "This means I need to check **[what to check]**."
+
+### When Analyzing HTML
+
+- "I opened a **[tagname]** tag but didn't close it with `</[tagname]>`."
+- "The **[tagname]** element needs an **[attribute]** attribute to work."
+- "I nested these tags incorrectly because I closed **[tagname]** before closing **[tagname]**."
+- "The image path says **[path]**, but the file is actually **[actual path]**."
+
+### When Analyzing CSS
+
+- "The CSS file isn't connected because the HTML is missing the `<link>` tag in the `<head>`."
+- "I wrote the property as **[what was written]**, but it should be **[correct spelling]**."
+- "The selector **[selector]** doesn't match any HTML elements because **[reason]**."
+- "The CSS is missing a semicolon after **[property]**: **[value]**."
+
+### When Comparing Expected vs. Actual
+
+- "The expected output shows **[description]**, but my page shows **[description]**."
+- "I expected the **[element]** to be **[styled]**, but it's actually **[how it appears]**."
+
+### When Describing Fixes
+
+- "To fix this, I need to **[action]** because **[reason]**."
+- "I'll change **[what]** to **[new version]** so that **[expected result]**."
+
+---
+
+## Questions to Ask Yourself When Debugging
+
+1. **About HTML:**
+   - Are all tags opened and closed?
+   - Are all tags nested correctly (closed in reverse order)?
+   - Do image paths match the actual filenames?
+   - Are all required attributes present (like `src` for images, `href` for links)?
+   - Is the HTML indented to show structure?
+
+2. **About CSS:**
+   - Is the stylesheet linked in the `<head>` of the HTML?
+   - Do all properties end with semicolons?
+   - Are class/ID selectors named correctly?
+   - Do the selectors in CSS match the elements in HTML?
+   - Are property names spelled correctly?
+
+3. **About Accessibility:**
+   - Do all images have meaningful `alt` text?
+   - Is the `alt` text descriptive, not just "image"?
+
+4. **About Layout:**
+   - Does the page look like the expected output?
+   - Is spacing (margin, padding) correct?
+   - Are colors, fonts, and sizes applied correctly?
+   - Is the flexbox layout working as intended?
+
+---
+
+## How to Use AI Tools for Help
+
+**Good use of AI tools:**
+- Ask what a property does: "What does `justify-content` do in flexbox?"
+- Ask for explanations: "Why would a missing closing tag break the page?"
+- Ask for guidance: "I think my image path is wrong. How do I check if the file exists?"
+- Ask for clarification: "What's the difference between `margin` and `padding`?"
+- **Ask Copilot to break down complex problems:** "Look at Lesson 7 in the README. What are the main steps I need to complete, in order?" or "What subtasks should I tackle first?"
+
+**Avoid these requests (they prevent learning):**
+- ❌ "Fix my code"
+- ❌ "Here's my HTML/CSS, make it work"
+- ❌ "What's wrong with this lesson?"
+- ❌ "Generate the correct code for me"
+- ❌ "Complete this lesson"
+
+**Instead, ask specific questions:**
+- ✅ "I see an error about a missing closing tag. Where do I look in my code?"
+- ✅ "What should an image tag look like?"
+- ✅ "What does 'out of bounds' mean?"
+- ✅ "Can you explain what this error message means?"
+
+**Remember:** The goal is for YOU to understand and debug. If Copilot fixes everything, you haven't learned anything. Document any help you get in your reflection!
+
+---
+
+## Key Debugging Checklist
+
+Use this checklist when your page isn't working:
+
+- [ ] HTML file saved?
+- [ ] CSS file saved and linked in `<head>`?
+- [ ] All opening tags have closing tags?
+- [ ] All tags nested correctly?
+- [ ] All CSS properties end with `;`?
+- [ ] Filenames and paths match exactly?
+- [ ] Class/ID names match between HTML and CSS?
+- [ ] Page looks like the expected output?
+

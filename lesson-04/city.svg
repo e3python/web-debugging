@@ -1,0 +1,15 @@
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="City buildings with windows">
+  <rect width="100%" height="100%" fill="#eef2f6" />
+  <rect x="60" y="120" width="140" height="200" fill="#8da0b3" />
+  <rect x="240" y="80" width="160" height="240" fill="#6e8196" />
+  <rect x="430" y="140" width="150" height="180" fill="#94a6ba" />
+  <g fill="#f8f5d7">
+    <rect x="80" y="150" width="30" height="30" />
+    <rect x="130" y="150" width="30" height="30" />
+    <rect x="260" y="120" width="30" height="30" />
+    <rect x="310" y="120" width="30" height="30" />
+    <rect x="450" y="170" width="30" height="30" />
+    <rect x="500" y="170" width="30" height="30" />
+  </g>
+  <rect x="0" y="310" width="640" height="50" fill="#c9d7e3" />
+</svg>

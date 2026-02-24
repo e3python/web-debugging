@@ -1,0 +1,15 @@
+<svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="City skyline">
+  <rect width="100%" height="100%" fill="#f5e6d3" />
+  <rect x="20" y="60" width="40" height="70" fill="#8da0b3" />
+  <rect x="70" y="40" width="50" height="90" fill="#6e8196" />
+  <rect x="130" y="70" width="45" height="60" fill="#94a6ba" />
+  <g fill="#f8f5d7">
+    <rect x="30" y="75" width="10" height="10" />
+    <rect x="45" y="75" width="10" height="10" />
+    <rect x="80" y="60" width="10" height="10" />
+    <rect x="95" y="60" width="10" height="10" />
+    <rect x="140" y="85" width="10" height="10" />
+    <rect x="155" y="85" width="10" height="10" />
+  </g>
+  <rect x="0" y="125" width="200" height="25" fill="#c9d7e3" />
+</svg>

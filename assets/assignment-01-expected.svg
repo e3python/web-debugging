@@ -1,0 +1,8 @@
+<svg width="900" height="360" viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Expected page layout with a large heading and two short paragraphs">
+  <rect width="100%" height="100%" fill="#f7f7fb" />
+  <rect x="60" y="40" width="780" height="280" rx="16" fill="#ffffff" stroke="#d9d9e3" stroke-width="2" />
+  <text x="100" y="120" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="36" fill="#1b1b1f" font-weight="700">Welcome to Debugging</text>
+  <text x="100" y="170" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="18" fill="#30303a">This page is supposed to show a heading and a short paragraph.</text>
+  <text x="100" y="205" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="18" fill="#30303a">Your job is to find the HTML mistake and fix it.</text>
+  <text x="100" y="260" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" fill="#6b6b76">Expected appearance</text>
+</svg>
